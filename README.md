@@ -14,3 +14,9 @@
 * Langkah 3: Lengkapi Kode di main.dart
 
 ![Penyesuaian](image/Screenshot%202025-10-07%20211346.png)
+
+* Langkah 4: Membuat data model
+
+membuat folder bernama models dan file bernama item.dart
+![Penyesuaian](image/Screenshot%202025-10-07%20211858.png)
+![Penyesuaian](image/Screenshot%202025-10-07%20211914.png)
