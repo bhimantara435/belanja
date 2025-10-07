@@ -6,23 +6,38 @@ class ItemPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Item item = ModalRoute.of(context)!.settings.arguments as Item;
+    final item = ModalRoute.of(context)!.settings.arguments as Item;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Detail Item"),
-      ),
-      body: Center(
+      appBar: AppBar(title: const Text("Detail Item")),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              item.name,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Center(
+              child: Hero(
+                tag: item.name,
+                child: Image.asset(item.imageUrl, height: 200),
+              ),
             ),
-            Text(
-              "Rp ${item.price}",
-              style: const TextStyle(fontSize: 18),
+            const SizedBox(height: 16),
+            Text(item.name,
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            Text("Rp ${item.price}", style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 4),
+            Text("Stok: ${item.stock}"),
+            const SizedBox(height: 4),
+            Row(
+              children: List.generate(
+                5,
+                (i) => Icon(
+                  i < item.rating ? Icons.star : Icons.star_border,
+                  color: Colors.amber,
+                ),
+              ),
             ),
           ],
         ),
