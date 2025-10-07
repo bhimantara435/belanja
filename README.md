@@ -11,3 +11,6 @@
 ![home_page](image/Screenshot%202025-10-07%20210646.png)
 ![home_page](image/Screenshot%202025-10-07%20210831.png)
 
+* Langkah 3: Lengkapi Kode di main.dart
+
+![Penyesuaian](image/Screenshot%202025-10-07%20210646.png)
