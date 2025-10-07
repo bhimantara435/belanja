@@ -38,3 +38,11 @@ membuat folder bernama models dan file bernama item.dart
 hasil:
 ![penyesuain](image/Screenshot%202025-10-07%20220102.png)
 ![penyesuain](image/Screenshot%202025-10-07%20220117.png)
+
+
+# Tugas Praktikum 2
+
+hasil :
+![hasil](image/Screenshot%202025-10-07%20224307.png)
+![hasil](image/Screenshot%202025-10-07%20224324.png)
+![hasil](image/Screenshot%202025-10-07%20224454.png)
